@@ -1,0 +1,34 @@
+{
+  "name": "imun",
+  "title": "Iman Nemati",
+  "root_url": "https://imun.io",
+  "domain": "imun.io",
+  "meta": {
+    "description": "",
+    "keywords": "",
+    "robots": "index, follow"
+  },
+  "og_tags": {
+    "title": "Iman Nemati",
+    "description": "Software Developer",
+    "image": "",
+    "type": "wesbite"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Iman Nemati",
+    "description": "Software Developer",
+    "image": "",
+    "site": "@imanpad"
+  },
+  "theme_color": "#ffffff",
+  "favicon": "",
+  "favicon_32": "",
+  "favicon_16": "",
+  "csp": "default-src 'self'; img-src 'self'",
+  "contact": {
+    "email": "imun22@gmail.com",
+    "phone": "",
+    "wesbite": "https://imun.io"
+  }
+}
