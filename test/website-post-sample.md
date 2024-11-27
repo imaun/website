@@ -1,15 +1,17 @@
 ---
-Slug: "test-post"
-Title: "Test"
-Description: "This is a Test"
-Summary: "This is a summary"
-Category: "Test"
+slug: "test-post"
+title: "Test"
+author: imun
+post_type: blog
+description: "This is a Test"
+summary: "This is a summary"
+category: "Test"
 Tags:
     - test
     - blog
-CoverImage: ""
-CreatedAt: "2024-10-25 20:00:00"
-UpdatedAt: "2024-10-25 20:00:01"
+cover_image: ""
+created_at: "2024-10-25 20:00:00"
+updated_at: "2024-10-25 20:00:01"
 ---
 ## Test
 
@@ -20,5 +22,3 @@ UpdatedAt: "2024-10-25 20:00:01"
 - Third
 
 End.
-
-
