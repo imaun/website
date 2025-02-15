@@ -64,7 +64,7 @@ jobs:
                   "content": "Translate this to Persian:\n$FILE_CONTENT"
                 }
               ]
-            }
+            })
 
             echo "Payload: $PAYLOAD"
             RESPONSE=$(curl -s https://api.openai.com/v1/chat/completions \
