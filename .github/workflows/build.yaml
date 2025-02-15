@@ -73,7 +73,15 @@ jobs:
       - name: Check for translated file changes
         id: check_translation_changes
         run: |
-          git diff --exit-code --quiet *-fa.md || echo "changes_detected=true" >> $GITHUB_ENV
+          if git ls-files --others --exclude-standard *-fa.md | grep .; then
+            echo "New translated files detected."
+            echo "changes_detected=true" >> $GITHUB_ENV
+          elif git diff --quiet *-fa.md; then
+            echo "No changes detected."
+          else
+            echo "Modified translated files detected."
+            echo "changes_detected=true" >> $GITHUB_ENV
+          fi
 
       - name: Commit changes
         if: env.changes_detected == 'true'
