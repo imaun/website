@@ -15,7 +15,16 @@ jobs:
       - name: Get changed files
         id: changed-files
         run: |
-          CH_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- '*.md')
+          PREV_COMMIT=${{ github.event.before }}
+          CURR_COMMIT=${{ github.sha }}
+
+          # Fallback if PREV_COMMIT is invalid (e.g., first commit)
+          if [ "$PREV_COMMIT" = "0000000000000000000000000000000000000000" ]; then
+            echo "First commit detected. Comparing with initial state."
+            PREV_COMMIT=$(git rev-list --max-parents=0 HEAD)  # Get the first commit hash
+          fi
+
+          CH_FILES=$(git diff --name-only $PREV_COMMIT $CURR_COMMIT -- '*.md')
           echo "Changed files:"
           echo "$CH_FILES"
           echo "FILES=$CH_FILES" >> $GITHUB_ENV

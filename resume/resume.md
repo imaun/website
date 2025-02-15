@@ -18,8 +18,9 @@ with more than 12 years of experience, building both back-end and front-end for 
 ## 💼 Experiences
 ### Senior Software Engineer @ GreenFlux
 (From Oct 2023 - Now)
-- Working with a team!
-- sample
+- Working as a `Senior Software Engineer` on an EV-Charging platform.
+- Developing back-end services for OCPI protocol
+- Write pipelines for Azure DevOps
 
 ### Senior Software Engineer @ ZinoTech
 (From Apr 2022 - Sep 2023)
