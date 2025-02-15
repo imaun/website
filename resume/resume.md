@@ -43,6 +43,7 @@ with more than 12 years of experience, building both back-end and front-end for 
 - Fifth try!
 - Sixth try!
 - Seventh try!
+- Pipeline passes but null returned from OpenAI API!
 
 
 
