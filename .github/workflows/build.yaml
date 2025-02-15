@@ -17,20 +17,28 @@ jobs:
       - name: Get changed files
         id: changed-files
         run: |
+          PREV_COMMIT=${{ github.event.before }}
+          CURR_COMMIT=${{ github.sha }}
+
+          # Handle first commit or missing history
           if [ -z "$PREV_COMMIT" ] || [ "$PREV_COMMIT" = "0000000000000000000000000000000000000000" ]; then
             echo "First commit detected or missing history. Listing only new files."
-            CHANGED_FILES=$(git ls-files '*.md')  # Get all .md files in the repo
+            CHANGED_FILES=$(git ls-files '*.md')  # Get all .md files
           else
             echo "Comparing changes between $PREV_COMMIT and $CURR_COMMIT"
             CHANGED_FILES=$(git diff --name-only $PREV_COMMIT $CURR_COMMIT -- '*.md')
           fi
 
-          # If no changed files, set an empty default value
           if [ -z "$CHANGED_FILES" ]; then
             echo "No changed markdown files detected."
-            echo "FILES=" >> $GITHUB_ENV  # Ensure the variable is set
+            echo "FILES=" >> $GITHUB_ENV
           else
-            echo "FILES=$CHANGED_FILES" >> $GITHUB_ENV
+            echo "Changed files:"
+            echo "$CHANGED_FILES"
+
+            echo "FILES<<EOF" >> $GITHUB_ENV
+            echo "$CHANGED_FILES" >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
           fi
 
       - name: Translate changed files with ChatGPT

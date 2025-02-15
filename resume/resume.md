@@ -33,7 +33,9 @@ with more than 12 years of experience, building both back-end and front-end for 
 - Developed a Crypto-currency exchange (webapp) where users can buy/sell crypto assets
 - Developed a reusable library for User management on top of ASP.NET Identity
 - Developed CoinMarketCap API client library for .NET
-- 
+- Sample
+
+### TODO
 
 
 
