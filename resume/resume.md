@@ -44,6 +44,7 @@ with more than 12 years of experience, building both back-end and front-end for 
 - Sixth try!
 - Seventh try!
 - Pipeline passes but null returned from OpenAI API!
+- ChatGPT returns nul for curl request
 
 
 
