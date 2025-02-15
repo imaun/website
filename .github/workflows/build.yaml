@@ -74,4 +74,4 @@ jobs:
           git config --global user.email "github-actions@github.com"
           git add *-fa.md
           git commit -m "Add translated files" || echo "No changes to commit"
-          git push https://x-access-token:${GH_PAT}@github.com/imaun/website.git main
+          git push https://x-access-token:${GH_PAT}@github.com/imaun/website.git master
