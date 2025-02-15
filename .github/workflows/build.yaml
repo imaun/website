@@ -67,8 +67,12 @@ jobs:
 
       - name: Commit and push translated files
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add *-fa.md
-          git commit -m "Add translated files"
-          git push || echo "No changes to commit"
+          if: env.FILES != ''
+          env:
+            GH_PAT: ${{ secrets.GH_PAT }}
+          run: |
+            git config --global user.name "github-actions"
+            git config --global user.email "github-actions@github.com"
+            git add *-fa.md
+            git commit -m "Add translated files" || echo "No changes to commit"
+            git push https://x-access-token:${GH_PAT}@github.com/imaun/website.git master
