@@ -65,13 +65,24 @@ jobs:
             echo "Saved translation to $TRANSLATED_FILE"
           done
 
-      - name: Commit & push translated files
-        if: env.FILES != ''  # Run only if FILES is not empty
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+      - name: Configure Git
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Check for translated file changes
+        id: check_translation_changes
+        run: |
+          git diff --exit-code --quiet *-fa.md || echo "changes_detected=true" >> $GITHUB_ENV
+
+      - name: Commit changes
+        if: env.changes_detected == 'true'
+        run: |
           git add *-fa.md
-          git commit -m "Add translated files" || echo "No changes to commit"
-          git push https://x-access-token:${GH_PAT}@github.com/imaun/website.git master
+          git commit -m "Add translated files"
+
+      - name: Push changes
+        if: env.changes_detected == 'true'
+        run: git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
