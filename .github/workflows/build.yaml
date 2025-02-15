@@ -1,0 +1,54 @@
+name: build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@V3
+
+      - name: Get changed files
+        id: changed-files
+        run: |
+          CH_FILES=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- '*.md')
+          echo "Changed files:"
+          echo "$CH_FILES"
+          echo "FILES=$CH_FILES" >> $GITHUB_ENV
+
+
+      - name: Translate changed files with ChatGPT
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          for FILE in $FILES; do
+            echo "Translating: $FILE"
+
+            TRANSLATION=$(curl -s https://api.openai.com/v1/chat/completions \
+              -H "Authorization: Bearer $OPENAI_API_KEY" \
+              -H "Content-Type: application/json" \
+              -d '{
+                "model": "gpt-4",
+                "messages": [
+                  {"role": "system", "content": "You are a translator with a specialty in software development. You must accurately translate the text while preserving technical terms that do not have a precise Persian equivalent. Do not translate such technical words and keep them intact."},
+                  {"role": "user", "content": "Translate this to Persian:\n'"$(cat $FILE)"'"}
+                ]
+              }' | jq -r '.choices[0].message.content')
+
+            # Save the translation
+            TRANSLATED_FILE="${FILE%.md}-fa.md"
+            echo "$TRANSLATION" > "$TRANSLATED_FILE"
+            echo "Saved translation to $TRANSLATED_FILE"
+          done
+
+      - name: Commit and push translated files
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add *_translated.txt
+          git commit -m "Add translated files"
+          git push || echo "No changes to commit"
