@@ -55,11 +55,11 @@ jobs:
               messages: [
                 {
                   role: "system",
-                  content: "You are a translator with a specialty in software development. You must accurately translate the text while preserving technical terms that do not have a precise Persian equivalent. Do not translate such technical words and keep them intact."
+                  content: "You are a professional translator specializing in software development and technical documentation. The text may contain YAML front matter at the top, marked between triple dashes (---). DO NOT translate the YAML field names. Only translate the values while keeping the YAML structure intact. Preserve any code, URLs, or technical terms in their original language."
                 },
                 {
                   role: "user",
-                  content: "Translate this to Persian:\n\($content)"
+                  content: "Translate this markdown file to Persian while keeping YAML field names intact:\n\($content)"
                 }
               ]
             }')
@@ -70,7 +70,7 @@ jobs:
               -H "Authorization: Bearer $OPENAI_API_KEY" \
               -H "Content-Type: application/json" \
               -d "$PAYLOAD")
-              
+
             echo "API Response: $RESPONSE"
             
             TRANSLATION=$(echo "$RESPONSE" | jq -r '.choices[0].message.content')
