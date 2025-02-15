@@ -91,6 +91,5 @@ jobs:
 
       - name: Push changes
         if: env.changes_detected == 'true'
-        run: git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/imaun/website.git HEAD:master
