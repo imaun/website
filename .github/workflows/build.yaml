@@ -52,19 +52,19 @@ jobs:
             
             # Construct the JSON payload using a here-document
             PAYLOAD=$(cat <<EOF
-{
-  "model": "gpt-4",
-  "messages": [
-    {
-      "role": "system",
-      "content": "You are a translator with a specialty in software development. You must accurately translate the text while preserving technical terms that do not have a precise Persian equivalent. Do not translate such technical words and keep them intact."
-    },
-    {
-      "role": "user",
-      "content": "Translate this to Persian:\n$FILE_CONTENT"
-    }
-  ]
-}
+            {
+              "model": "gpt-4",
+              "messages": [
+                {
+                  "role": "system",
+                  "content": "You are a translator with a specialty in software development. You must accurately translate the text while preserving technical terms that do not have a precise Persian equivalent. Do not translate such technical words and keep them intact."
+                },
+                {
+                  "role": "user",
+                  "content": "Translate this to Persian:\n$FILE_CONTENT"
+                }
+              ]
+            }
 
             echo "Payload: $PAYLOAD"
             RESPONSE=$(curl -s https://api.openai.com/v1/chat/completions \
