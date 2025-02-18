@@ -1,0 +1,23 @@
+name: Translate Files
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Run Translation Action
+        uses: imaun/gpt-translate-action@main
+        with:
+          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+          target_lang: "Persian"
+          target_lang_code: "fa"
+          file_exts: "md"
+          output_format: "*-{lang}.{ext}"
