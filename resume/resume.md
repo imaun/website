@@ -37,24 +37,6 @@ with more than 12 years of experience, building both back-end and front-end for 
 
 ### TODO
 - Let's see if this line will be translated!
-- Second try!
-- Third try!
-- Forth try!
-- Fifth try!
-- Sixth try!
-- Seventh try!
-- Pipeline passes but null returned from OpenAI API!
-- ChatGPT returns nul for curl request
-- kdkdk
-- Abs
-- In a far far away...
-- Hello!
-- What about now?
-- this time it will work! 
-- A new line too see if github action works!
-- A second try for github action to work
-- A third github action try 
-
 
 
 
