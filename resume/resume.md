@@ -34,7 +34,3 @@ with more than 12 years of experience, building both back-end and front-end for 
 - Developed a reusable library for User management on top of ASP.NET Identity
 - Developed CoinMarketCap API client library for .NET
 - Sample
-
-### TODO
-- Let's see if this line will be translated!
-- I want to see if this text will be translated to Persin!
