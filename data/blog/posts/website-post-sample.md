@@ -28,6 +28,8 @@ updated_at: "2025-05-13:00:01"
 - Nine
 - Ten
 - Eleven
+- Please! Please! C# is developer friendly!?
+- Python? CI/CD pipelines are ...
 
 
 ### Code

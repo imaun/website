@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 2
 
       - name: Run Translation Action
-        uses: imaun/gpt-translate-action@v1.8.6
+        uses: imaun/gpt-translate-action@v1.8.7
         with:
           api_key: ${{ secrets.OPENAI_API_KEY }}
           ai_service: "openai"
