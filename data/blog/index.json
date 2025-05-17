@@ -11,8 +11,8 @@
         "category": "Test",
         "tags": [ "asp.net", "blogging", "static site generator", "csharp", "python", "automation"],
         "cover_image": "",
-        "created_at": "2025-10-17 00:00:02",
-        "updated_at": "2025-10-17 00:00:02"
+        "created_at": "2025-10-17T00:00:02",
+        "updated_at": "2025-10-17T00:00:02"
       }
     ]
   }
