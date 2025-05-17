@@ -1,0 +1,18 @@
+{
+    "post_type": "blog",
+    "source": "remote",
+    "posts": [
+      {
+        "path": "posts/hello-world.md",
+        "slug": "hello-world",
+        "title": "چگونه وبسایت خود را ساختم؟",
+        "summary": "به بلاگ من خوش آمدید! در این نوشته، من چگونگی ساخت وبسایت خود را با استفاده از ترکیبی از تولید کننده سایت استاتیک و داینامیک به اشتراک می گذارم!",
+        "author": "imun",
+        "category": "تست",
+        "tags": [ "asp.net", "blogging", "static site generator", "csharp", "python", "automation"],
+        "cover_image": "",
+        "created_at": "2025-10-17 00:00:02",
+        "updated_at": "2025-10-17 00:00:02"
+      }
+    ]
+  }
