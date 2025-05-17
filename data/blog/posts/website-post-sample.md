@@ -30,6 +30,7 @@ updated_at: "2025-05-13 20:00:01"
 - Eleven
 - Please! Please! C# is developer friendly!?
 - Python? CI/CD pipelines are ...
+- Check it with the new gpt-translate-action version 1.8.8
 
 **What is Cloud?**
 The cloud refers to servers that are accessed over the Internet, and the software and databases that run on those servers.
@@ -40,4 +41,14 @@ The cloud refers to servers that are accessed over the Internet, and the softwar
 ```cs
 using System;
 using System.Threading.Tasks;
+```
+
+```python
+import os
+from glob import glob
+```
+
+```bash
+cd src
+git status
 ```
