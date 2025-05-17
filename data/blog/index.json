@@ -3,28 +3,16 @@
     "source": "remote",
     "posts": [
       {
-        "path": "TestData/website-post-sample.md",
-        "slug": "website-post-sample",
-        "title": "Sample Post",
-        "summary": "This is a summary",
+        "path": "posts/hello-world.md",
+        "slug": "hello-world",
+        "title": "How I built my website?",
+        "summary": "Welcome to my blog! In this post, I will share how I built my website using a mix of static & dynamic site generator!",
         "author": "imun",
         "category": "Test",
-        "tags": [ "blog", "test"],
+        "tags": [ "asp.net", "blogging", "static site generator", "csharp", "python", "automation"],
         "cover_image": "",
-        "created_at": "2024-10-25T20:00:00",
-        "updated_at": "2024-10-25T20:00:02"
-      },
-      {
-        "path": "TestData/website-post-sample.md",
-        "slug": "website-post-sample-1",
-        "title": "Sample Post",
-        "summary": "This is a summary",
-        "author": "imun",
-        "category": "Test",
-        "tags": [ "blog", "test"],
-        "cover_image": "",
-        "created_at": "2024-10-25T20:00:00",
-        "updated_at": "2024-10-25T20:00:02"
+        "created_at": "2025-10-17 00:00:02",
+        "updated_at": "2025-10-17 00:00:02"
       }
     ]
   }
