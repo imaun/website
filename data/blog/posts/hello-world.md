@@ -12,7 +12,7 @@ Tags:
     - csharp
     - python
     - automation
-cover_image: "https://github.com/imaun/website/blob/master/assets/img/hello-world.png"
+cover_image: "https://raw.githubusercontent.com/imaun/website/refs/heads/master/assets/img/hello-world.png"
 created_at: "2024-10-25 20:00:00"
 updated_at: "2025-05-13 20:00:01"
 ---
