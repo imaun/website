@@ -17,33 +17,28 @@ created_at: "2024-10-25 20:00:00"
 updated_at: "2025-05-13 20:00:01"
 ---
 
-Hello internet wanderer! 👋
+## Hello internet wanderer! 👋
 
 Welcome to my little corner of the web — and more importantly, to my very first blog post in over 8 years! (Yes, it’s been a while... let’s pretend it hasn’t.)
 
 This blog post is a story — a behind-the-scenes peek — into how I built this website from scratch. No WordPress. No Hugo. No over-engineered CMS. Just code, curiosity, and a sprinkle of stubbornness.
 
-Let’s dive in 🚀
+### Let’s dive in 🚀
 
-✨ The Vision: Simple, Powerful, Personal
+## ✨ The Vision: Simple, Powerful, Personal
 
 All I wanted was:
 
-A clean, minimal blog
-
-A few pages to share my work
-
-A way to manage content easily
-
-Hosted on Azure
-
-Serve a few APIs and Telegram bots in the background (you know, the secret stuff 😎)
+- A clean, minimal blog
+- A few pages to share my work
+- A way to manage content easily
+- Hosted on Azure
+- Serve a few APIs and Telegram bots in the background (you know, the secret stuff 😎)
 
 Sure, I could’ve slapped together a WordPress site in an afternoon or used a static site generator like Hugo. But where’s the fun in that?
-
 So I built it myself. In C#. With Razor Pages. Because… why not?
 
-🏗️ Step 1: Content Without a Database
+### 🏗️ Step 1: Content Without a Database
 
 I didn’t want to use a traditional database for my site content. It’s mostly static text, after all — why add SQL into the mix?
 
