@@ -23,9 +23,9 @@ Welcome to my little corner of the web — and more importantly, to my very firs
 
 This blog post is a story — a behind-the-scenes peek — into how I built this website from scratch. No WordPress. No Hugo. No over-engineered CMS. Just code, curiosity, and a sprinkle of stubbornness.
 
-### Let’s dive in 🚀
+**Let’s dive in 🚀**
 
-## ✨ The Vision: Simple, Powerful, Personal
+### ✨ The Vision: Simple, Powerful, Personal
 
 All I wanted was:
 
@@ -50,7 +50,7 @@ Markdown files for blog posts
 
 📁 Website Content Repo
 
-🧱 Step 2: Enter Wdata — A Custom Content Loader
+### 🧱 Step 2: Enter Wdata — A Custom Content Loader
 
 To fetch content from disk or directly from GitHub, I created a C# library called Wdata. It’s dead simple to use and available on NuGet:
 
@@ -59,20 +59,22 @@ To fetch content from disk or directly from GitHub, I created a C# library calle
 
 Example usage:
 
+```cs
 using Wdata;
 
 var loader = new WebsiteDataService("https://raw.githubusercontent.com/imaun/website/main/");
 string markdown = await loader.GetFileContentAsync("data/blog/posts/my-first-post.md");
+```
 
 You can load local or remote content — and it's perfect for Markdown-powered blogs.
 
-☁️ Step 3: ASP.NET + Razor Pages + Azure
+### ☁️ Step 3: ASP.NET + Razor Pages + Azure
 
 Next, I spun up a classic ASP.NET Core web app with Razor Pages. Razor Pages is simple, fast, and gives me full control. Then I deployed it to Azure Web Apps. Nothing fancy, just good ol’ CI/CD with GitHub Actions and Azure DevOps.
 
 My website pulls content directly from GitHub at runtime using Wdata, so there’s no need to redeploy just to update a blog post.
 
-🌍 Step 4: Making It Multilingual — Automatically
+### 🌍 Step 4: Making It Multilingual — Automatically
 
 Here’s where it gets fun.
 
@@ -89,7 +91,7 @@ Pushes the translated versions back into the repo
 🔗 GPT Translate Action
 
 Example Workflow:
-
+```yaml
 name: Translate Markdown to Persian
 
 on:
@@ -107,10 +109,11 @@ jobs:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       with:
         target_lang: fa
+```
 
 So now, every time I update or publish a post, it magically appears in Persian too. ✨
 
-🔮 The Dark Side (a.k.a. Bonus Features)
+## 🔮 The Dark Side (a.k.a. Bonus Features)
 
 There’s more going on here than meets the eye:
 
@@ -122,7 +125,7 @@ A secret admin dashboard for managing blog metadata (still under construction �
 
 But that’s a story for another post 😉
 
-🔚 Final Thoughts
+### 🔚 Final Thoughts
 
 My website is still a work in progress. But that’s the beauty of building it yourself — you’re never really done, and every feature is yours to shape.
 
