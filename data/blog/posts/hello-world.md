@@ -197,14 +197,6 @@ jobs:
 
 So now, every time I update or publish a post, it magically appears in Persian too. ✨
 
-## 🔮 The Dark Side (a.k.a. Bonus Features)
-
-There’s more going on here than meets the eye:
-
-- Background workers serving my Telegram bots
-- APIs for internal tools I use
-
-But that’s a story for another post 😉
 
 ### 🔚 Final Thoughts
 
