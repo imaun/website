@@ -50,10 +50,10 @@ All hosted on github! [📁 Website Content Repo](https://github.com/imaun/websi
 
 ### 🧱 Step 2: Wdata — A Custom Content Loader
 
-To fetch content from disk or directly from GitHub, I created a C# library called Wdata. It’s dead simple to use and available on NuGet:
+To fetch content from disk or directly from GitHub, I created a C# library called Wdata. It’s dead simple to use and available on NuGet:  
 
-[🔗 Wdata on NuGet](https://www.nuget.org/packages/Wdata)
-[🔗 Wdata GitHub Repo](https://github.com/imaun/wdata)
+[🔗 Wdata on NuGet](https://www.nuget.org/packages/Wdata)  
+[🔗 Wdata GitHub Repo](https://github.com/imaun/wdata)  
 
 It’s highly configurable! You can point to local folders or remote URLs like GitHub’s raw content paths. Just add this to your appsettings:
 
@@ -159,9 +159,9 @@ So I built a GitHub Action that uses OpenAI’s GPT API to do it for me. It:
 
 - Detects file changes in the GitHub content repo
 - Translates changed content to Persian
-- Pushes the translated versions back into the repo
+- Pushes the translated versions back into the repo  
 
-[🔗 GPT Translate Action](https://github.com/imaun/gpt-translate-action)
+[🔗 GPT Translate Action](https://github.com/imaun/gpt-translate-action)  
 
 The pipeline for my website github repo:
 ```yaml
@@ -212,5 +212,8 @@ My website is still a work in progress. But that’s the beauty of building it y
 
 If you’re a developer like me, you don’t need a big CMS to build a blog. Just Markdown, a web server, and a bit of code can go a long way. And if you’re feeling fancy, teach your site to speak multiple languages while you sleep 💤
 
-Thanks for reading — and feel free to poke around my GitHub to steal any ideas 😄
+Thanks for reading — and feel free to poke around my GitHub to steal any ideas 😄  
+
+---
+[🔗 Source for this blog post](https://github.com/imaun/website/blob/master/data/blog/posts/hello-world.md)
 
