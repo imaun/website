@@ -1,16 +1,39 @@
 {
-    "post_type": "blog",
-    "source": "remote",
-    "posts": [
-      {
-        "path": "posts/hello-world.md",
-        "slug": "hello-world",
-        "title": "How I built my website?",
-        "summary": "Welcome to my blog! In this post, I will share how I built my website using a mix of static & dynamic site generator!",
-        "author": "imun",
-        "category": "Test",
-        "tags": [ "asp.net", "blogging", "static site generator", "csharp", "python", "automation"],
-        "cover_image": ""
-      }
-    ]
-  }
+  "post_type": "blog",
+  "source": "remote",
+  "posts": [
+    {
+      "path": "posts/catdocs.md",
+      "slug": "catdocs",
+      "title": "Managing Modular OpenAPI Specifications at Scale",
+      "summary": "By using Catdocs, each team can manage their part of the API independently—paths, schemas, components—while still contributing to a single source of truth that is validated and bundled in CI.",
+      "author": "imun",
+      "category": "projects",
+      "tags": [
+        "openapi",
+        "dotnet",
+        "csharp",
+        "automation",
+        "ci-cd"
+      ],
+      "cover_image": "https://github.com/imaun/catdocs/blob/master/assets/catdocs-header.png"
+    },
+    {
+      "path": "posts/hello-world.md",
+      "slug": "hello-world",
+      "title": "How I built my website?",
+      "summary": "Welcome to my blog! In this post, I will share how I built my website using a mix of static & dynamic site generator!",
+      "author": "imun",
+      "category": "projects",
+      "tags": [
+        "asp.net",
+        "blogging",
+        "static site generator",
+        "csharp",
+        "python",
+        "automation"
+      ],
+      "cover_image": "https://raw.githubusercontent.com/imaun/website/refs/heads/master/assets/img/hello-world.png"
+    }
+  ]
+}

@@ -5,7 +5,7 @@ author: imun
 post_type: blog
 description: "This blog post is a story — a behind-the-scenes peek — into how I built this website from scratch"
 summary: "Welcome to my blog! In this post, I will share how I built my website using a mix of static & dynamic site generator!"
-category: "develop"
+category: "projects"
 tags:
     - asp.net
     - blogging

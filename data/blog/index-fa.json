@@ -1,17 +1,23 @@
-ترجمه این متن به فارسی در حالی که کلیدهای YAML، هر علامت گذاری html یا json تغییر نکرده است:
 {
-    "post_type": "وبلاگ",
-    "source": "از راه دور",
-    "posts": [
-      {
-        "path": "posts/hello-world.md",
-        "slug": "hello-world",
-        "title": "چگونه وبسایت خود را ساختم؟",
-        "summary": "به وبلاگ من خوش آمدید! در این پست، چگونگی ساخت وبسایت من با استفاده از ترکیبی از تولید کننده سایت استاتیک و دینامیک را به اشتراک خواهم گذاشت!",
-        "author": "imun",
-        "category": "تست",
-        "tags": [ "asp.net", "blogging", "static site generator", "csharp", "python", "automation"],
-        "cover_image": ""
-      }
-    ]
-  }
+  "post_type": "وبلاگ",
+  "source": "از راه دور",
+  "posts": [
+    {
+      "path": "posts/hello-world.md",
+      "slug": "hello-world",
+      "title": "چگونه وبسایت خود را ساختم؟",
+      "summary": "به وبلاگ من خوش آمدید! در این پست، چگونگی ساخت وبسایت من با استفاده از ترکیبی از تولید کننده سایت استاتیک و دینامیک را به اشتراک خواهم گذاشت!",
+      "author": "imun",
+      "category": "تست",
+      "tags": [
+        "asp.net",
+        "blogging",
+        "static site generator",
+        "csharp",
+        "python",
+        "automation"
+      ],
+      "cover_image": "https://raw.githubusercontent.com/imaun/website/refs/heads/master/assets/img/hello-world.png"
+    }
+  ]
+}
