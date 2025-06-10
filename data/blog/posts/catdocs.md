@@ -166,3 +166,6 @@ While Catdocs solves modular API management well, it's not universally beneficia
 Catdocs offers a set of tooling that makes modular OpenAPI workflows more reliable. It doesn’t replace full-blown API platforms, but provides just enough structure and automation for teams that want flexibility without vendor lock-in.
 
 Repository: **[github.com/imaun/catdocs](https://github.com/imaun/catdocs)**
+
+---
+[🔗 Source for this blog post](https://github.com/imaun/website/blob/master/data/blog/posts/catdocs.md)
