@@ -1,0 +1,32 @@
+ترجمه این متن به فارسی در حالی که کلیدهای YAML، هر نشانه گذاری HTML یا json تغییر نمی کند:
+{ 
+    "post_type": "blog", 
+    "source": "remote", 
+    "posts": 
+    [ 
+      { 
+        "path": "posts/catdocs.md", 
+        "slug": "catdocs", 
+        "title": "مدیریت مشخصات OpenAPI ماژولار در مقیاس", 
+        "summary": "با استفاده از Catdocs، هر تیم می تواند بخش خود از API را به طور مستقل مدیریت کند - مسیرها، طرح ها، کامپوننت ها - در حالی که هنوز هم به یک منبع واحد از حقیقت که تأیید و بسته بندی شده در CI کمک می کند.", 
+        "author": "imun", 
+        "category": "projects", 
+        "tags": [ "openapi", "dotnet", "csharp", "automation", "ci-cd" ], 
+        "cover_image": "https://raw.githubusercontent.com/imaun/catdocs/refs/heads/master/assets/catdocs-header.png", 
+        "created_at": "2025-06-10 20:00:00", 
+        "updated_at": "2025-06-10 20:00:01" 
+      }, 
+      { 
+        "path": "posts/hello-world.md", 
+        "slug": "hello-world", 
+        "title": "چگونه وب سایت خودم را ساختم؟", 
+        "summary": "به وبلاگ من خوش آمدید! در این پست، من نحوه ساخت وب سایت خود را با استفاده از ترکیبی از تولید کننده سایت استاتیک و پویا به اشتراک می گذارم!", 
+        "author": "imun", 
+        "category": "projects", 
+        "tags": [ "asp.net", "blogging", "static site generator", "csharp", "python", "automation" ], 
+        "cover_image": "https://raw.githubusercontent.com/imaun/website/refs/heads/master/assets/img/hello-world.png", 
+        "created_at": "2024-10-25 20:00:00", 
+        "updated_at": "2025-06-10 20:00:01" 
+      } 
+    ] 
+  }
