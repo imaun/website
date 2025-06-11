@@ -16,7 +16,7 @@
         "automation",
         "ci-cd"
       ],
-      "cover_image": "https://github.com/imaun/catdocs/blob/master/assets/catdocs-header.png"
+      "cover_image": "https://raw.githubusercontent.com/imaun/catdocs/refs/heads/master/assets/catdocs-header.png"
     },
     {
       "path": "posts/hello-world.md",

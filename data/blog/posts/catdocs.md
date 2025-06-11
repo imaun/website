@@ -12,7 +12,7 @@ tags:
     - csharp
     - automation
     - ci-cd
-cover_image: "https://github.com/imaun/catdocs/blob/master/assets/catdocs-header.png"
+cover_image: "https://raw.githubusercontent.com/imaun/catdocs/refs/heads/master/assets/catdocs-header.png"
 created_at: "2025-06-10 20:00:00"
 updated_at: "2025-06-10 20:00:01"
 ---

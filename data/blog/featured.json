@@ -3,28 +3,28 @@
     "source": "remote",
     "posts": [
       {
-        "path": "TestData/website-post-sample.md",
-        "slug": "website-post-sample",
-        "title": "Sample Post",
-        "summary": "This is a summary",
+        "path": "posts/catdocs.md",
+        "slug": "catdocs",
+        "title": "Managing Modular OpenAPI Specifications at Scale",
+        "summary": "By using Catdocs, each team can manage their part of the API independently—paths, schemas, components—while still contributing to a single source of truth that is validated and bundled in CI.",
         "author": "imun",
-        "category": "Test",
-        "tags": [ "blog", "test"],
-        "cover_image": "",
-        "created_at": "2024-10-25T20:00:00",
-        "updated_at": "2024-10-25T20:00:02"
+        "category": "projects",
+        "tags": [ "openapi", "dotnet", "csharp", "automation", "ci-cd" ],
+        "cover_image": "https://raw.githubusercontent.com/imaun/catdocs/refs/heads/master/assets/catdocs-header.png",
+        "created_at": "2025-06-10 20:00:00",
+        "updated_at": "2025-06-10 20:00:01"
       },
       {
-        "path": "TestData/website-post-sample.md",
-        "slug": "website-post-sample-1",
-        "title": "Sample Post",
-        "summary": "This is a summary",
+        "path": "posts/hello-world.md",
+        "slug": "hello-world",
+        "title": "How I built my website?",
+        "summary": "Welcome to my blog! In this post, I will share how I built my website using a mix of static & dynamic site generator!",
         "author": "imun",
-        "category": "Test",
-        "tags": [ "blog", "test"],
-        "cover_image": "",
-        "created_at": "2024-10-25T20:00:00",
-        "updated_at": "2024-10-25T20:00:02"
+        "category": "projects",
+        "tags": [ "asp.net", "blogging", "static site generator", "csharp", "python", "automation" ],
+        "cover_image": "https://raw.githubusercontent.com/imaun/website/refs/heads/master/assets/img/hello-world.png",
+        "created_at": "2024-10-25 20:00:00",
+        "updated_at": "2025-06-10 20:00:01"
       }
     ]
   }
