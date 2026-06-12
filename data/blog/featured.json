@@ -3,6 +3,18 @@
     "source": "remote",
     "posts": [
       {
+        "path": "posts/429-rate-limit.md",
+        "slug": "429-rate-limit",
+        "title": "Why 429 Is Sometimes a Sign Your System Is Healthy",
+        "summary": "Many engineers treat HTTP 429 responses as errors, but in modern distributed systems they are often a sign that protective mechanisms are working correctly. This article explores rate limiting, throttling, retry storms, cascading failures, and how healthy platforms use 429 responses to preserve stability and availability.",
+        "author": "imun",
+        "category": "distributed-systems",
+        "tags": [ "distributed-systems", "software-architecture", "api-design", "cloud", "azure" ],
+        "cover_image": "https://raw.githubusercontent.com/imaun/website/refs/heads/master/assets/img/429-rate-limiting.png",
+        "created_at": "2026-06-10T20:00:00",
+        "updated_at": "2026-06-10T20:00:10"
+      },
+      {
         "path": "posts/catdocs.md",
         "slug": "catdocs",
         "title": "Managing Modular OpenAPI Specifications at Scale",
