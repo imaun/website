@@ -542,3 +542,6 @@ Ask a different question:
 In distributed systems, the answer is often the latter.
 
 And that's usually a sign of good engineering.
+
+---
+[🔗 Source for this blog post](https://github.com/imaun/website/blob/master/data/blog/posts/429-rate-limit.md)
