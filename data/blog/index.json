@@ -3,7 +3,7 @@
   "source": "remote",
   "posts": [
     {
-      "path": "posts/04-ocpi-diagnostics.md",
+      "path": "posts/ocpi-diagnostics.md",
       "slug": "ocpi-diagnostics",
       "title": "Designing a Non-Blocking Diagnostics Pipeline for OCPI Integrations",
       "summary": "In integration-heavy EV platforms, protocol diagnostics are essential for understanding what was sent, what came back, and how responses were interpreted. This article walks through improving a best-effort OCPI diagnostics pipeline by making it non-blocking, bounded, batched, observable, and safer under traffic spikes.",
