@@ -631,3 +631,6 @@ The goal of this redesign was not to make diagnostic events guaranteed. That wou
 By moving diagnostic publishing behind a bounded queue, batching events before sending them, trimming large payloads, handling oversized events explicitly, and adding graceful shutdown behavior, the diagnostics flow became more predictable without putting pressure on the critical path.
 
 For me, the main takeaway is simple: best-effort systems still deserve intentional design. They may not guarantee every message, but they should fail clearly, protect the main flow, and behave well under load.
+
+---
+[🔗 Source for this blog post](https://github.com/imaun/website/blob/master/data/blog/posts/ocpi-diagnostics.md)
