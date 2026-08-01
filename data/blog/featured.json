@@ -3,6 +3,18 @@
     "source": "remote",
     "posts": [
       {
+        "path": "osts/04-ocpi-diagnostics.md",
+        "slug": "ocpi-diagnostics",
+        "title": "Designing a Non-Blocking Diagnostics Pipeline for OCPI Integrations",
+        "summary": "In integration-heavy EV platforms, protocol diagnostics are essential for understanding what was sent, what came back, and how responses were interpreted. This article walks through improving a best-effort OCPI diagnostics pipeline by making it non-blocking, bounded, batched, observable, and safer under traffic spikes.",
+        "author": "imun",
+        "category": "distributed-systems",
+        "tags": [ "distributed-systems", "software-architecture", "api-design", "cloud", "azure", "ocpi", "ev-charging" ],
+        "cover_image": "https://raw.githubusercontent.com/imaun/website/refs/heads/master/assets/img/ocpi-diagnostics/ocpi-diagnostics-cover.png",
+        "created_at": "2026-08-10T20:00:00",
+        "updated_at": "2026-08-10T20:00:10"
+      },
+      {
         "path": "posts/429-rate-limit.md",
         "slug": "429-rate-limit",
         "title": "Why 429 Is Sometimes a Sign Your System Is Healthy",
@@ -25,18 +37,6 @@
         "cover_image": "https://raw.githubusercontent.com/imaun/catdocs/refs/heads/master/assets/catdocs-header.png",
         "created_at": "2025-06-10T20:00:00",
         "updated_at": "2024-06-19T20:00:10"
-      },
-      {
-        "path": "posts/hello-world.md",
-        "slug": "hello-world",
-        "title": "How I built my website?",
-        "summary": "Welcome to my blog! In this post, I will share how I built my website using a mix of static & dynamic site generator!",
-        "author": "imun",
-        "category": "projects",
-        "tags": [ "asp.net", "blogging", "static site generator", "csharp", "python", "automation" ],
-        "cover_image": "https://raw.githubusercontent.com/imaun/website/refs/heads/master/assets/img/hello-world.png",
-        "created_at": "2024-10-25T20:00:00",
-        "updated_at": "2024-10-25T20:00:02"
-      }
+      }    
     ]
   }
